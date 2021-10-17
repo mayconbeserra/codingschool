@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Linq;
 using CodingSchool.Models;
 using FluentAssertions;
@@ -84,6 +85,16 @@ namespace CodingSchool
 
             codeFile.Lines.Count.Should().Be(2);
             codeFile.Lines.OfType<CommentLine>().Should().HaveCount(2);
+        }
+
+        [Fact]
+        public void Then_It_Should_Do_Some_CrazyThing()
+        {
+            Hashtable table = new Hashtable();
+
+            table.Add("a", 1010);
+            table.Add("b", 1010);
+            table.Add("a", "xpto");
         }
     }
 }

@@ -1,0 +1,32 @@
+{
+  "messageId": "054e0000-0a00-0242-4121-08d85884fd03",
+  "conversationId": "054e0000-0a00-0242-4a17-08d85884fd03",
+  "sourceAddress": "rabbitmq://rabbitmq-01/ee00f5453ab6_dotnet_bus_yi8yyyykyybrfib1bdcr6asnys?durable=false&autodelete=true",
+  "destinationAddress": "rabbitmq://rabbitmq-01/Project.Services.Vehicles.Messages.Events:IBulkVehicleCreated",
+  "messageType": [
+    "urn:message:Project.Services.Vehicles.Messages.Events:IBulkVehicleCreated",
+    "urn:message:Project.Common.MessageBus.Abstractions:IEventMessage",
+    "urn:message:Project.Common.MessageBus.Abstractions:IGenericMessage"
+  ],
+  "message": {
+    "bulkUploadVehicleRegistryId": "40346eff-8e3e-42df-99a9-e32705a38408",
+    "vehicleId": "ff12b6f7-8853-4af0-a117-55e1ae7320db",
+    "isDaimler": true
+  },
+  "sentTime": "2020-09-14T08:05:47.6703921Z",
+  "headers": {
+    "uber-trace-id": "a63929f41be142fc:fbffcd7dd05209c:dd0e613f8f88375e:1",
+    "CorrelationId": "0HM2OG24GVFV1:0000000A",
+    "UserId": "a24ec159-c5cd-4f9f-8f23-29f9633ef010"
+  },
+  "host": {
+    "machineName": "ee00f5453ab6",
+    "processName": "dotnet",
+    "processId": 1,
+    "assembly": "Project.Services.Vehicles.Host",
+    "assemblyVersion": "1.0.0.0",
+    "frameworkVersion": "3.1.5",
+    "massTransitVersion": "5.5.6.0",
+    "operatingSystemVersion": "Unix 4.4.21.69"
+  }
+}
